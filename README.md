@@ -1,4 +1,4 @@
-# codingStory
+# 😝codingStory
 
 <details>
 <summary>3차 프로젝트 기본설정</summary>
