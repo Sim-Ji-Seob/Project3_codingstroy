@@ -1,7 +1,7 @@
 # codingStory
 
 <details>
-<summary>2차 프로젝트 기본설정</summary>
+<summary>3차 프로젝트 기본설정</summary>
 
 
 프로젝트명 : codingStory
@@ -23,53 +23,47 @@ ORM : Spring Data JPA (JAVA(SQL))
 
 빌드 : Gradle
 
-설정 : application.yml, application-oauth2.yml
+설정 : application.yml, application-oauth2.yml(google,naver,kakao api 키 필요)
+
+기타 설정:
+1. setting - gradle<br>
+   <img src="src/main/resources/static/images/readme/img_20.png" width="250px" height="150px"/> <br>
+2. project Structure - SDK -> 11 <br>
+   <img src="src/main/resources/static/images/readme/img_21.png" width="400px" height="50px"/> <br>
 
 </details>
 
-## DEV
+##  📌 프로젝트 Git 다운로드 주소 📌
+$git clone https://github.com/Sim-Ji-Seob/Project3_codingstroy.git <br>
+branch : master
 
-### MEMBER
+# 📝프로젝트 개요📝
+## 🗓️일정
+<img src="src/main/resources/static/images/readme/img.png" width="400" height="130"/> <br>
+
+
+## 📝개요
 <details>
-<summary>Security</summary>
+<summary>프로젝트 개요</summary>
+3차 프로젝트는 OPEN API DATA를 이용하는 과제입니다.<br>
+영화, 날씨, 버스 API가 과제이고 저는 영화 API를 담당했습니다. 영화진흥원뿐만 아니라 TMDB라는
+해외 API 사이트도 이용해서 데이터를 가져왔습니다. 또한 가져온 데이터를 DB에 저장하여 챗봇에도 사용했습니다.
+</details><br>
 
 
-</details>
-
-<details>
-<summary>Oauth2</summary>
-
-</details>
-
-
-### attendance
-<details>
-<summary>근태</summary>
-
-</details>
-
-### approval  
-
-
-![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=50px&section=header&text=개발자%20심지섭의%202차프로젝트&fontSize=50)
-
-##목차<br>
-    -[개요](#개요)<br>
-    -[프로젝트 상세](#프로젝트 상세내용)<br>
-
-## 개요
-사용환경<br>
-
-프로그램<br>
+## 🖱️개발 환경🖱️
+### <span style="color: white;">💻 프로그램 💻</span> <br>
+<p>
 <img src="https://img.shields.io/badge/notion-white?style=flat-square&logo=notion&logoColor=gray"/>
 <img src="https://img.shields.io/badge/mysql-2E64FE?style=flat-square&logo=mysql&logoColor=white"/>
 <img src="https://img.shields.io/badge/visualstudiocode-81BEF7?style=flat-square&logo=visualstudiocode&logoColor=blue"/>
 <img src="https://img.shields.io/badge/intellijidea-navy?style=flat-square&logo=intellijidea&logoColor=white"/>
 <img src="https://img.shields.io/badge/github-black?style=-square&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/eclipseide-darkblue?style=flat-square&logo=eclipseide&logoColor=white"/>
+</p>
 
-[//]: # (<img src="https://img.shields.io/badge/eclipseide-darkblue?style=flat-square&logo=eclipseide&logoColor=white"/>)
-
-개발언어<br>
+### <span style="color: white;">🛠 개발 환경 🛠</span> <br>
+<p>
 <img src="https://img.shields.io/badge/html5-green?style=flat-square&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/css3-blue?style=flat-square&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/auth0-ccc?style=flat-square&logo=auth0&logoColor=white"/>
@@ -81,89 +75,77 @@ ORM : Spring Data JPA (JAVA(SQL))
 <img src="https://img.shields.io/badge/thymeleaf-0B610B?style=flat-square&logo=thymeleaf&logoColor=white"/>
 <img src="https://img.shields.io/badge/spring-0B610B?style=flat-square&logo=spring&logoColor=white"/>
 <img src="src/main/resources/static/images/readme/oAuth2.png" width="20" height="20"/> <br>
+</p>
+
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Sim)](https://github.com/Sim/github-readme-stats)
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SIM)](https://github.com/SIM/github-readme-stats)
 
-<details>
-<summary>● 프로젝트 개요</summary>
-2차 프로젝트는 3차 프로젝트의 OPEN API를 연계하여 사용하기 위해 영화관으로 테마를 정했습니다.<br>
-영화관에 근무하는 근무자들이 사용할 수 있는 관리자 페이지를 만들었고, 각종 기능들을 추가하였습니다.<br>
-그 중 저는 근무자들이 보고서를 작성하고 결재를 받는 시스템을 만들었습니다. 
+# ⚡ 팀원별 역할 ⚡
+- [ ] 왕** (팀장) : 날씨 API, 날씨 Chat-Bo
+- [x] <span style='color:green'>_**심지섭 (팀원) : 영화 API, 영화 Chat-Bot**_</span>
+- [ ] 이** (팀원) : 영화 API, 영화 Chat-Bot
+- [ ] 박** (팀원) : 버스 Chat-Bot
+- [ ] 조** (팀원) : 버스 API
 
-</details><br>
+#  🚀 주요 기능 🚀
 
+| 기능             | 설명                                    | 
+|----------------|---------------------------------------|
+| API 데이터 불러오기   | Open API 데이터를 불러와서 출력(일일/주말/주중 박스오피스) |
+| API 데이터 DB에 저장 | 가져온 데이터를 DB에 저장(박스오피스 정보/ 영화 상세정보)    |
+| API 데이터로 영화 검색 | TMDB API 통해서 전체 영화 검색                 |
+| Chat-Bot       | DB에서 데이터를 불러와 채팅창에 출력                 |
 
-<details>
-<summary>프로젝트 상세</summary>
+# 📁 프로젝트 상세
+### 목차
+1. [API 데이터 가져오기](#1-api-데이터-가져오기)
+2. [영화 검색](#2-영화-검색)
+3. [API 데이터 DB에 저장](#2-api-데이터-db에-저장)
+4. [Chat-Bot](#3-chat-bot)
 
-# 1. 보고서 문서 작성 후 결재자 설정<br>
-## ● 보고서 작성 페이지
-<img src="src/main/resources/static/images/readme/img.png"/>
-● ↓ 작성자는 보고서 작성시 결재자를 선택할 수 있습니다. 선택할 때 동명이인을 구분하고 가독성을 높이기 위해 부서와 직급, 이름이 모두 보이도록 코드를 작성했습니다.<br>
-    결재자의 정보는 데이터베이스에 저장된 회원들의 정보를 불러와 select option 으로 불러왔습니다.   
+# 1️⃣ API 데이터 가져오기
+일일 박스오피스<br>
+   <img src="src/main/resources/static/images/readme/img_1.png" width="400" height="200"/> <br>
+주말 박스오피스<br>
+   <img src="src/main/resources/static/images/readme/img_2.png" width="400" height="200"/> <br>
+주중 박스오피스<br>
+   <img src="src/main/resources/static/images/readme/img_3.png" width="400" height="200"/> <br>
+영화 상세정보<br>
+   <img src="src/main/resources/static/images/readme/img_7.png" width="500" height="250"/> <br>
 
-<img src="src/main/resources/static/images/readme/img_1.png"/> <br>
-  
-## ● ↓보고서의 종류
+| API 주소    | 설명                            | 
+|-----------|-------------------------------|
+| 한국 영화 진흥원 | 일일/주말/주중 박스오피스 데이터 <br>영화 상세정보 |
+| TMDB      | 영화 포스터, 영화 줄거리(한/영)           |
 
-   <img src="src/main/resources/static/images/readme/img_2.png"/><br>
-<img src="src/main/resources/static/images/readme/img_3.png"/><br>
-<img src="src/main/resources/static/images/readme/img_4.png"/><br>
-<img src="src/main/resources/static/images/readme/img_5.png"/><br>
-<img src="src/main/resources/static/images/readme/img_6.png"/><br>
-<img src="src/main/resources/static/images/readme/img_7.png"/><br>
-<img src="src/main/resources/static/images/readme/img_8.png"/><br>
-<img src="src/main/resources/static/images/readme/img_9.png"/><br>
-<img src="src/main/resources/static/images/readme/img_10.png"/><br>
-<img src="src/main/resources/static/images/readme/img_11.png"/><br>
-<img src="src/main/resources/static/images/readme/img_12.png"/><br>
-<img src="src/main/resources/static/images/readme/img_13.png"/><br>
-<img src="src/main/resources/static/images/readme/img_14.png"/><br>
-<img src="src/main/resources/static/images/readme/img_15.png"/><br>
-<img src="src/main/resources/static/images/readme/img_16.png"/><br>
-<img src="src/main/resources/static/images/readme/img_17.png"/><br>
-<img src="src/main/resources/static/images/readme/img_18.png"/><br>
+![3차 박스오피스+상세정보](https://github.com/Sim-Ji-Seob/Project3_codingstroy/assets/154939602/995a55ff-40c4-400e-836a-36f763441948)
 
-
-
-</details>
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
-### ADMIN
-
-<details>
-<summary>admin</summary>
-
-</details>
-### FRONT
-
-### department
-
-<details>
-<summary>부서</summary>
-
-</details>
-
-### pay
-
-<details>
-<summary>급여</summary>
-
-</details>
+# 2️⃣ 영화 검색
+TMDB API 를 활용하여 전체 영화를 검색할 수 있다.<br>
+검색하는 키워드가 포함된 모든 영화를 검색하여 보여준다.<br>
+![3차 영화 검색](https://github.com/Sim-Ji-Seob/Project3_codingstroy/assets/154939602/a1993023-ac28-4fe9-9142-2344c851b1c4)
 
 
-### board
+# 3️⃣ API 데이터 DB에 저장
+ Open API 주소를 통해 가져온 데이터를 DB에 저장하기 위해 URL 경로를 컨트롤러로 바꿔주어 저장 매서드를 사용<br>
+영화 박스오피스 DB<br>
+<img src="src/main/resources/static/images/readme/img_4.png" width="300" height="150"/> <br>
 
-<details>
-<summary>notice  공지사항</summary>
-</details>
+영화 상세정보 DB<br>
+<img src="src/main/resources/static/images/readme/img_5.png" width="600" height="150"/> 
+<img src="src/main/resources/static/images/readme/img_6.png" width="300" height="150"/> <br>
 
-<details>
-<summary>employee 우수사원</summary>
-</details>
+# 4️⃣ Chat-Bot
+챗봇에 처음 접속하게 되면 메세지가 자동으로 출력<br>
+해당 메세지에 오늘/주중/주말 박스오피스 정보가 나오는 버튼 설정<br>
+클릭시 해당 박스오피스 순위를 출력<br>
+영화의 제목을 입력시 해당 영화의 상세정보를 DB에서 가져와 출력<br>
+<img src="src/main/resources/static/images/readme/img_8.png" width="220" height="380"/> 
+<img src="src/main/resources/static/images/readme/img_9.png" width="220" height="380"/> <br>
 
-<details>
-<summary>freeBoard 자유게시판</summary>
-</details>
+해당 정보가 없을시 출력되는 메세지<br>
+<img src="src/main/resources/static/images/readme/img_10.png" width="220" height="380"/> <br>
 
-# codingstory
+![3차 챗봇 확대](https://github.com/Sim-Ji-Seob/Project3_codingstroy/assets/154939602/3354786a-8ac1-4d90-bf7f-16c2b4ea2474)
+
+
+[⬆⬆맨위로⬆⬆](#codingstory)
