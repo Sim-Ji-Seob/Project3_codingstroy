@@ -102,6 +102,10 @@ branch : master
 3. [API 데이터 DB에 저장](#2-api-데이터-db에-저장)
 4. [Chat-Bot](#3-chat-bot)
 
+# 전체 ERD
+   <img src="src/main/resources/static/images/readme/img_11.png"/> <br>
+
+
 # 1️⃣ API 데이터 가져오기
 일일 박스오피스<br>
    <img src="src/main/resources/static/images/readme/img_1.png" width="400" height="200"/> <br>
